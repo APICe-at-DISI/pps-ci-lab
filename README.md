@@ -27,6 +27,7 @@ Every other member should fork the "truth repo".
 ## Step 3: configure the flow
 
 Each member should configure the project for working with git flow and create a `develop` branch.
+Clone your own fork locally, create `develop`, and push it on your remote copy.
 
 ## Step 4: basic Java build
 
