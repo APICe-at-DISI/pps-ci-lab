@@ -1,0 +1,6 @@
+
+language: java
+script:
+- './gradlew clean build'
+notifications:
+  email: false
