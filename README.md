@@ -47,16 +47,14 @@ Each member must now create a pull request from their `develop` branch towards t
 The project leader must comment and ask a change for each of them (add Javadoc, or any other change).
 The developers must comply, and update their pull request (pushing the changes locally should suffice)
 
-## Step 7: features
+## Step 7: testing in Scala
+
+Adapt to Gradle and re-follow/finish doing the exercises of Lab07 involving SCoverage, ScalaTest, and ScalaMock.
+
+## Step 8: more features
 
 From now on, each developer must pick a feature from the following list, create a feature branch locally, implement it, and contribute back to the `develop` of the truth repository.
 
-* Add a Scala source code and configure the build.gradle appropriately
-* Import tuProlog as a dependency from Maven Central
-* Write a Scala class that uses the new tuProlog dependency
-* Write a JUnit test, make it fail first, see what happens to the build. Then fix it.
-* Write a Java class that uses Guava's Multimap (import Google Guava from Maven Central)
-* [Multiple] Write a Scala test using each one of the frameworks presented in the previous lab
 * Configure Gradle to generate the Javadocs
 * Add a Groovy source and configure the build.gradle appropriately
 * Add an Xtend source and configure the build.gradle appropriately
