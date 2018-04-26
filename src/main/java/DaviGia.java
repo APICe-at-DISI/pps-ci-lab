@@ -1,5 +1,7 @@
+package main.java;
+
 public class DaviGia {
-    public static void saySomething() {
+    public void saySomething() {
         System.out.println("Zio Carmelitano!!!");
     }
 }
