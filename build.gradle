@@ -1,0 +1,5 @@
+apply plugin: 'java'
+
+task customJavadoc(type: Javadoc) {
+    source = sourceSets.main.allJava
+}
