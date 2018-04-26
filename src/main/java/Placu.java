@@ -1,5 +1,3 @@
-package main.java;
-
 public class Placu implements Person {
 
     @Override

@@ -1,5 +1,3 @@
-package main.java;
-
 public class Turi implements Person {
 
     @Override
