@@ -1,8 +1,9 @@
-public class Turi {
+package main.java;
 
-    private final String meaningfulOutput = "Soz now it's perfect";
+public class Turi implements Person {
 
-    public void meanigfulMethod(){
-        System.out.println(this.meaningfulOutput);
+    @Override
+    public void saySomething(){
+        System.out.println("Soz now it's perfect");
     }
 }
