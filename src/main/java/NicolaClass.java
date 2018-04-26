@@ -1,6 +1,6 @@
 public class NicolaClass {
 
-  Public NicolaClass() {
+  public NicolaClass() {
 	  
   }
   
