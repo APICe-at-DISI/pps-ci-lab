@@ -2,8 +2,8 @@ public class NicolaClass {
 
   private int i;
 
-  public NicolaClass() {
-	i=10;  
+  public NicolaClass(int value) {
+	i=value*2;
   }
   
   public String toString() {
