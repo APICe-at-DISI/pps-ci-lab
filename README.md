@@ -4,13 +4,13 @@ This is an empty project, with a pre-configured Gradle wrapper.
 This makes the project buildable without the need of locally installing Gradle.
 To execute the build, use:
 ```bash
-gradle build
+./gradlew build
 ```
 To clean up the previous build results and start fresh, use instead:
 ```bash
-gradle clean build
+./gradlew clean build
 ```
-You **can** use the IDE of your choice, but you can also just work 
+You **can** use the IDE of your choice, but you can also just work with a text editor and the CLI.
 
 ## Step 1: groups and GitHub account
 
@@ -33,7 +33,7 @@ Clone your own fork locally, create `develop`, and push it on your remote copy.
 
 Each team member, working on `develop`, must create a Java class in the `src/main/java`.
 There must not be any name clash among team members.
-Each member must configure the `build.gradle` file in such a way that `gradle clean build` will correctly create a `build` folder with the class files compiled.
+Each member must configure the `build.gradle.kts` file in such a way that `gradle clean build` will correctly create a `build` folder with the class files compiled.
 
 ## Step 5: continuous integration
 
