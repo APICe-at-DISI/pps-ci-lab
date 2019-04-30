@@ -49,7 +49,7 @@ The developers must comply, and update their pull request (pushing the changes l
 
 ## Step 7: testing in Scala
 
-Adapt to Gradle and re-follow/finish doing the exercises of Lab07 involving SCoverage, ScalaTest, and ScalaMock.
+Adapt to Gradle and re-follow/finish doing the exercises of Scala test lab involving SCoverage, ScalaTest, and ScalaMock.
 
 ## Step 8: more features
 
