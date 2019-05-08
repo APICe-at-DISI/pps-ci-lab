@@ -1,1 +1,3 @@
-public class ZuccheroSintattico{}
+public class ZuccheroSintattico {
+
+}
