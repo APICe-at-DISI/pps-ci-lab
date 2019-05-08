@@ -1,1 +1,1 @@
-plugins { java } 
+plugins {java}
