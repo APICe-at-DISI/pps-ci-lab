@@ -1,0 +1,1 @@
+pulic class ZuccheroSintattico{}
