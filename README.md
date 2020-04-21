@@ -1,7 +1,7 @@
 # Continuous Integration Lab for the course "Programming and Development Paradigms"
 
 This is an empty project, with a pre-configured Gradle wrapper.
-This makes the project buildable without the need of locally installing Gradle.
+This makes the project buildable without the need of installing Gradle locally.
 To execute the build, use:
 ```bash
 ./gradlew build
@@ -45,20 +45,28 @@ If the procedure has been performed correctly, a build will start on Travis CI, 
 
 Each member must now create a pull request from their `develop` branch towards the "truth repository" `develop` branch.
 The project leader must comment and ask a change for each of them (add Javadoc, or any other change).
-The developers must comply, and update their pull request (pushing the changes locally should suffice)
+The developers must comply, and update their pull request (pushing the changes to their local repository should suffice)
 
-## Step 7: testing in Scala
+## Step 7: Scala
 
-Adapt to Gradle and re-follow/finish doing the exercises of Scala test lab involving SCoverage, ScalaTest, and ScalaMock.
+Enable the `scala` plugin, and write a source under `src/main/scala`.
+Interoperate with the Java source by calling Java from Scala.
 
-## Step 8: more features
+## Step 8: testing
+
+Write a JUnit test:
+1. [Configure Gradle](https://docs.gradle.org/current/userguide/java_testing.html#using_junit5)
+2. Write a simple test using Java
+3. Write another test using Scala
+
+## Step 9: more features
 
 From now on, each developer must pick a feature from the following list, create a feature branch locally, implement it, and contribute back to the `develop` of the truth repository.
 
 * Configure Gradle to generate the Javadocs
-* Add a Groovy source and configure the build.gradle appropriately
-* Add an Xtend source and configure the build.gradle appropriately
-* Configure Gradle for using PMD
-* Configure Gradle for using FindBugs
-* Configure Gradle for using Checkstyle
-* [Advanced] Using the Travis CI, documentation, configure a deployment on .travis.yml to automatically deploy the generated jars to GitHub releases
+* Add a Groovy source and configure the build.gradle.kts appropriately
+* Add a Kotlin source and configure the build.gradle.kts appropriately
+* Configure JaCoCo and run coverage report
+* Upload the coverage report to codecov.io
+* Configure PMD and checkstyle
+* Using the Travis CI, documentation, configure a deployment on .travis.yml to automatically deploy the generated jars to GitHub releases
