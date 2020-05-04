@@ -33,7 +33,7 @@ Clone your own fork locally, create `develop`, and push it on your remote copy.
 
 Each team member, working on `develop`, must create a Java class in the `src/main/java`.
 There must not be any name clash among team members.
-Each member must configure the `build.gradle.kts` file in such a way that `gradle clean build` will correctly create a `build` folder with the class files compiled.
+Each member must configure the `build.gradle.kts` file in such a way that `./gradlew clean build` will correctly create a `build` folder with the class files compiled.
 
 ## Step 5: continuous integration
 
