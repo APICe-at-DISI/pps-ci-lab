@@ -37,9 +37,14 @@ Each member must configure the `build.gradle.kts` file in such a way that `./gra
 
 ## Step 5: continuous integration
 
-Each member must now sign up on Travis CI, connect its GitHub account, and enable the build for the repository.
-Now, each one must create a valid `.travis.yml` file, and push it.
-If the procedure has been performed correctly, a build will start on Travis CI, and complete successfully.
+Now, each one must create a valid `.github/workflows/ci.yml` file, and push it.
+The workflow should:
+
+* Prepare a Linux virtual environment
+* Install Java at the appropriate version
+* Run Gradle making sure the build works on the reference machine
+
+If the procedure has been performed correctly, a workflow will will start and complete successfully.
 
 ## Step 6: pull requests
 
@@ -69,4 +74,4 @@ From now on, each developer must pick a feature from the following list, create 
 * Configure JaCoCo and run coverage report
 * Upload the coverage report to codecov.io
 * Configure PMD and checkstyle
-* Using the Travis CI, documentation, configure a deployment on .travis.yml to automatically deploy the generated jars to GitHub releases
+* Using the GitHub Actions documentation, and possibly the `gh` and `hub` command line tools, configure a deployment that automatically deploys the generated jars to GitHub releases
