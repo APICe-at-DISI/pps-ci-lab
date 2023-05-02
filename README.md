@@ -14,7 +14,7 @@ You **can** use the IDE of your choice, but you can also just work with a text e
 
 ## Step 1: groups and GitHub account
 
-This lab should be performed in groups of 2-4 people, each with her own PC, in order to exercise the basics of teamwork with git.
+This lab should be performed in groups of 2-4 people, each with their own PC, in order to exercise the basics of teamwork with git.
 Form a group, and elect a project leader randomly (e.g. using the Scala REPL to throw a random number).
 Every member of the groups must have a GitHub account.
 
