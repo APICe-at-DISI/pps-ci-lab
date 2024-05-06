@@ -10,4 +10,4 @@ on:
       with:
         distribution: "adopt" # See 'Supported distributions' for available options
         java-version: "21"
-    - run: java HelloWorldApp.java
+    - run: ./gradlew clean build
