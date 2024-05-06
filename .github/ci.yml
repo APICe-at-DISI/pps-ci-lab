@@ -1,7 +1,7 @@
 name: Clone Repository
 on:
   push: # On every push on any branch
-  jobs:
+jobs:
   Build: # Job name
   runs-on: ubuntu-latest # Operating system selection
   steps:
