@@ -74,4 +74,4 @@ From now on, each developer must pick a feature from the following list, create 
 * Configure JaCoCo and run coverage report
 * Upload the coverage report to codecov.io
 * Configure PMD and checkstyle
-* Using the GitHub Actions documentation, and possibly the `gh` and `hub` command line tools, configure a deployment that automatically deploys the generated jars to GitHub releases
+* Using the GitHub Actions documentation, and possibly the `gh` command line tool, configure a deployment that automatically deploys the generated jars to GitHub releases
