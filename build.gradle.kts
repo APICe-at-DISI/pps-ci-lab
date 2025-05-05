@@ -1,2 +1,1 @@
-plugins { java
-          scala}
+plugins { java }
