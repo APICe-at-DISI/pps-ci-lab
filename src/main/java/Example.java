@@ -13,6 +13,6 @@ public class Example {
 class exampleTest {
     public static void main(String[] args) {
         Example example = new Example(8);
-        System.out.println(example);
+        System.out.println(example.getA());
     }
 }
