@@ -1,16 +1,26 @@
 name: pps-ci-lab
+
 on:
-  push: # On every push on any branch
+  push:  # Runs on every push to any branch
+
 jobs:
-  Build: # Job name
-  runs-on: ubuntu-latest # Operating system selection
-  env: # Environment can be controlled at the job or step level
-    TERM: dumb # Sets the environment variable TERM to "dumb"
-  steps:
-    - name: Checkout # custom name Checkout the repository
-      uses: actions/checkout@v2 # Action implemented in this repository, tag "2"
-    - uses: joschi/setup-jdk@v2.3.0 # Action implemented in repository "joschi/setup-jdk" tag "2.3.0"
-      with: # Actions parameters (action name omitted)
-        java-version: 15
-    - name: Build
-      run: ./gradlew check
+  Build:  # Job name
+    runs-on: ubuntu-latest  # Correct indentation (2+ spaces under "Build")
+    env:
+      TERM: dumb  # Simplifies log output
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Updated from v2 to v4
+
+      - name: Set up JDK 15
+        uses: actions/setup-java@v3  # Official Java setup action
+        with:
+          java-version: '15'  # Must be a string (quotes required)
+          distribution: 'temurin'  # Recommended JDK distribution
+
+      - name: Grant execute permission to gradlew
+        run: chmod +x gradlew  # Ensures Gradle Wrapper is executable
+
+      - name: Build and Test
+        run: ./gradlew check  # Runs checks (tests + validation)
