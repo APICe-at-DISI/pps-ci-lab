@@ -1,0 +1,26 @@
+name: pps-ci-lab
+
+on:
+  push:  # Runs on every push
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    env:
+      TERM: dumb  # Simplified logs
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (LTS)
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'  # Use LTS version (11, 17, or 21)
+          distribution: 'temurin'  # Eclipse Temurin (recommended)
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build and Test
+        run: ./gradlew check
